@@ -1,4 +1,4 @@
-#Import Data set:
+#Import Sales Data set:
 Sales_data<-read.csv("SalesData.csv")
 View(Sales_data)
 getwd()

@@ -78,8 +78,8 @@ View(total_units)
 #Save "total_units into csv
 write.csv(total_units,"total_units.csv")
 
-#Import modified "total_units.csv" file
-total_units=read.csv("total_units.csv")
+#Import modified "total_units_data.csv" file
+total_units=read.csv("total_units_data.csv")
 total_units
 
 ggplot(total_units,aes(x=Division,y=Units, fill=Year))+geom_bar(position="dodge", stat="identity")+geom_text(aes(label=Units),size=3.2, hjust=0.7)+theme_update(plot.title = element_text(hjust = ))+ggtitle("Division wise Units Comparison for Each Year")+coord_flip()
